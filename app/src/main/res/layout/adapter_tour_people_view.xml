@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="?selectableItemBackground"
+        android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/memberName"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:maxLines="2"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:text="User Name"
+                    android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                    android:id="@+id/memberSeats"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:text="Seat booked 1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextGrey1"
+                    android:textSize="@dimen/_9sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/memberPickUpStatus"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/rectangle_background"
+                android:lines="1"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text="Pick up"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="gone" />
+
+        <ImageView
+                android:id="@+id/memberMessageImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/touch_bg"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:src="@mipmap/ic_chat"
+                android:tint="@color/colorPrimary"
+                android:transitionName="my_shared_transactiion" />
+
+        <ImageView
+                android:id="@+id/memberCallImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/touch_bg"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:src="@mipmap/ic_call" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/memberLocation"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:drawableLeft="@mipmap/ic_location"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Industrial Area Phase I, Chandigarh, India"
+            android:textColor="@color/colorTextGrey1"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone" />
+
+    <include layout="@layout/line_1" />
+
+</LinearLayout>

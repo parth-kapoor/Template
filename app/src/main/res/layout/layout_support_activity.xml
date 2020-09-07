@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_with_appbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_name"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorTextGrey1" />
+
+                    <TextView
+                        android:id="@+id/useraNameTxt"
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:text=" "
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_email"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorTextGrey1" />
+
+                    <TextView
+                        android:id="@+id/userEmaiil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/circular_std_book"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:text="xyz@gmail.com"
+                        style="@style/CommonTextStyle"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_phone_number"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorTextGrey1" />
+
+                    <TextView
+                        android:id="@+id/userContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/circular_std_book"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        style="@style/CommonTextStyle"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/chooseConcernBtn"
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/rectangle_bg_with_grey_border"
+                        android:drawableRight="@mipmap/ic_dropdown"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/str_choose_concern"
+                        android:textColor="@color/colorTextGrey1" />
+
+
+                    <EditText
+                        android:id="@+id/messageText"
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectangle_bg_with_grey_border"
+                        android:focusableInTouchMode="true"
+                        android:gravity="start"
+                        android:hint=" Enter your  message here"
+                        android:maxLines="5"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sendSupportBtn"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/rectangle_background"
+                android:text="@string/str_send"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

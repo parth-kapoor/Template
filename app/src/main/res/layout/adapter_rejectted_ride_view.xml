@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+    <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="Penalty Charges: €20"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@mipmap/cab_sample" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_1sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Sat,Nov 4, 11:00 AM" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:text="User: "
+                        android:textColor="@color/colorTextGrey1"
+                        android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:text="Paul Wiesly"
+                        android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="€40"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/tripsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:drawableLeft="@mipmap/ic_starting_location_point"
+                android:text="Riberia District,  Lisbon" />
+    </LinearLayout>
+
+    <include layout="@layout/line_1" />
+
+</LinearLayout>

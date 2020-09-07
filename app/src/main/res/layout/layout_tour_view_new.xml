@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/tourCategory"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Historical"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tourPickupTime"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_time"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="12:00 PM" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/tourDestinationsTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                tools:text="Lisbon Castle and buildings" />
+
+        <TextView
+                android:id="@+id/tourPeopleTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_people"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <include layout="@layout/line_1" />
+
+    <LinearLayout
+            android:id="@+id/holderViewTimeDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tourPickupLocation"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_location"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="Lisbon castle" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tourSeats"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_seats"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:drawableTint="@color/colorBlack"
+                    android:gravity="center|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="0 seat" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tourPickupDistance"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_distance"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="10 km" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

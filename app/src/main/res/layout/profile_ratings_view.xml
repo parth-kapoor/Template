@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_20sdp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="2000"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/str_trips"
+                android:alpha="0.8"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+    <!---->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="4.9"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/str_ratings"
+                android:alpha="0.8"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="180"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/str_reviews"
+                android:alpha="0.8"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_loading"
+    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_4sdp"
+    android:progressBackgroundTint="@color/colorPrimary"
+    android:secondaryProgressTint="@color/colorGrey"
+    android:visibility="gone">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/toolbar_root"
+        android:background="@color/colorWhite" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/avd_line" />
+</RelativeLayout>

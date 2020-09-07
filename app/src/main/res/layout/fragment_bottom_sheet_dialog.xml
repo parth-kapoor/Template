@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/rectangle_background"
+            android:backgroundTint="@color/colorAccent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+       <!-- <com.cunoraz.gifview.library.GifView
+                android:id="@+id/gif1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:gif="@mipmap/gif1" />
+-->
+
+        <ProgressBar
+                android:layout_width="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:background="@xml/circle_progress_"
+                android:layout_height="@dimen/_30sdp"/>
+
+        <!-- <TextView
+                 style="@style/CommonTextStyle"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:padding="@dimen/_10sdp"
+                 android:text="Loading..."
+                 android:textColor="@color/colorWhite"
+                 android:textSize="@dimen/_15sdp" />-->
+
+
+        <!--  &lt;!&ndash;&ndash;&gt;
+          <include layout="@layout/common_divider_with_side_padding"
+          />
+          <include layout="@layout/layout_common_recyclar_view"/>
+          &lt;!&ndash;&ndash;&gt;
+          <code_setup.app_util.views_.CustomtextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAllCaps="true"
+                  android:gravity="center"
+                  android:padding="@dimen/_10sdp"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginRight="@dimen/_10sdp"
+                  android:layout_marginBottom="@dimen/_10sdp"
+                  android:background="@drawable/drawable_rectangle_button"
+                  android:textColor="@color/colorWhite"
+                  android:text="@string/str_request_cab"/>-->
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_background"
+        android:elevation="@dimen/_5sdp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/_45sdp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+            android:id="@+id/textViewHeader"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_all_pickup"
+            android:textSize="@dimen/_14sdp" />
+
+    <View
+            android:id="@+id/facebookView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:alpha="0.8"
+            android:background="@color/colorLine"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/textViewHeader" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allMembersRecyclar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/textViewHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

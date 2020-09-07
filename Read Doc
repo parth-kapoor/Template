@@ -1,0 +1,18 @@
+  This is a  android base setup app  You can do  modification  as per you  requirement
+
+  Language used:-
+
+  -Kotlin
+
+  Project Structure:-
+
+  - MVP design pattern
+
+  Library  used:-
+
+  - Retrofit
+  - Rxjava,RxAndroid
+  - Dagger2
+  - fresco
+
+

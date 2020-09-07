@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_lay" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_company_info"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_company_name"
+                        android:textColor="@color/colorTextGrey1" />
+
+                <EditText
+                        style="@style/CommonEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="xyz"
+                        android:inputType="textCapWords"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+            <!---->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_email"
+                        android:textColor="@color/colorTextGrey" />
+
+                <EditText
+                        style="@style/CommonEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="xyz@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+            </LinearLayout>
+            <!---->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_phone_no"
+                        android:textColor="@color/colorTextGrey" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            app:ccp_clickable="true"
+                            app:ccp_showNameCode="true"
+                            app:ccp_textSize="@dimen/_13sdp" />
+
+                    <EditText
+                            style="@style/CommonEditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0987654321"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="13"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Personal Information-->
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_your_info"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_name"
+                        android:textColor="@color/colorTextGrey" />
+
+                <EditText
+                        style="@style/CommonEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="xyz"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+            <!---->
+
+            <!---->
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_designation"
+                        android:textColor="@color/colorTextGrey" />
+
+                <EditText
+                        style="@style/CommonEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+            </LinearLayout>
+
+            <!---->
+            <!---->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_password"
+                        android:textColor="@color/colorTextGrey" />
+
+                <EditText
+                        style="@style/CommonEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/masked_password_eye"
+                        android:hint="******"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+            </LinearLayout>
+
+            <!---->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_phone_no"
+                        android:textColor="@color/colorTextGrey" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp_your"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            app:ccp_clickable="true"
+                            app:ccp_showNameCode="true"
+                            app:ccp_textSize="@dimen/_13sdp" />
+
+                    <EditText
+                            style="@style/CommonEditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0987654321"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="13"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!---->
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                <CheckBox
+                        style="@style/CommonTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_agree_terms"
+                        android:textColor="@color/colorTextGrey1" />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/signUpCmpnyButton"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/rectangle_background"
+                    android:text="@string/str_signup"
+                    android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

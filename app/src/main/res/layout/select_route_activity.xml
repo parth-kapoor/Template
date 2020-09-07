@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_lay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical">
+        <include
+            layout="@layout/layout_schedule_date_time_view"
+            android:visibility="gone"/>
+
+        <include layout="@layout/address_selection_view" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorDividerGrey"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="@dimen/_5sdp"/>
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/addressSelectionRecyclar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/noLoactionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CommonTextStyle"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/str_no_location_found"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/otherAddressesHolder"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/strPopularRouts"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

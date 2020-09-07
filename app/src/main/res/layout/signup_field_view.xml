@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingTop="@dimen/_20sdp"
+    >
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_full_name"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/_12sdp" />
+
+    <EditText
+        android:id="@+id/fullNameSignup"
+        style="@style/CommonEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:lines="1"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="@dimen/_12sdp" />
+
+
+    <!---->
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/str_email"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/_12sdp" />
+
+    <EditText
+        android:id="@+id/emailSignup"
+        style="@style/CommonEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="@dimen/_12sdp" />
+    <!---->
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/str_phone_numbe"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/phoneNumberSignup"
+        style="@style/CommonEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="9876543210"
+        android:textSize="@dimen/_12sdp" />
+
+
+
+
+</LinearLayout>

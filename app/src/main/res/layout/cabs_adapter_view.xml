@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cabsDataHolderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/cabImageVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_hatchback" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/cabTypeTxt"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/str_hatchback_sedan"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/seatsText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_people"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/_3sdp"
+            android:layout_gravity="center_vertical"
+            android:text="2 pax"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorTextGrey1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cabPriceTxt"
+        style="@style/CommonTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_3sdp"
+        android:text="₹ 250"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sdp" />
+</LinearLayout>

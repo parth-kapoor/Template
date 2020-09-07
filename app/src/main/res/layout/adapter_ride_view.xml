@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:layout_below="@+id/driverDetailViewHolder"
+    android:id="@+id/rideDetailViewHolder"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_starting_location" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/drawable_dash_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_starting_loc_white"
+                android:tint="@color/colorPrimary" />
+
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:gravity="center"
+                android:paddingTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:text="Shimla, Himachal Pradesh"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        style="@style/CommonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:text="Housing Board, Chandigarh"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 250"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottonLineView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/colorDividerGrey" />
+
+</LinearLayout>

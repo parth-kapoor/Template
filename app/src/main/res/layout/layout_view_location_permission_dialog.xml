@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:custom="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_background"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:scrollbars="none">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/str_location_permission"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/str_location_permission_alert_message"
+                android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/settingButtonDialog"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_background"
+            android:text="@string/change_settings"
+            android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>

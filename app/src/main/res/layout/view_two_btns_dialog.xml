@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/rectangle_background"
+            android:backgroundTint="@color/colorWhite"
+            android:minHeight="@dimen/_120sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+        <TextView
+                android:id="@+id/titleTxtDialog"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="@string/str_status_update"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+        <TextView
+                android:id="@+id/messageTextDialog"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:text="@string/str_mark_arrived_text" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/cancelBtnDialog"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_background_grey"
+                    android:gravity="center"
+                    android:text="@string/str_cancel"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorBlack" />
+
+            <Button
+                    android:id="@+id/doneBtnDialog"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_background"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/str_done"
+                    android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/closeDialog"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/drawable_circle"
+            android:backgroundTint="@color/colorWhite"
+            android:elevation="2dp"
+            android:padding="@dimen/_8sdp"
+            android:src="@mipmap/ic_close"
+            android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+        <TextView
+                android:id="@+id/tourCategory"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@color/colorShadeGrey"
+                android:minWidth="@dimen/_300sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tourDestinationsTxt"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorShadeGrey"
+                    android:singleLine="true"
+                    android:text="" />
+
+            <TextView
+                    android:id="@+id/tourPeopleTxt"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@color/colorShadeGrey"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_weight="1.2"
+                    android:background="@color/colorShadeGrey"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tourPickupLocation"
+                        style="@style/CommonTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorShadeGrey"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tourPickupTime"
+                        style="@style/CommonTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorShadeGrey"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tourPickupDistance"
+                        style="@style/CommonTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

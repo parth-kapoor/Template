@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_toolbar_lay"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/profile_top_image_selection" />
+
+            <include layout="@layout/profile_detail_fields_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:backgroundTint="@color/colorButtonDarkGrey"
+                android:background="@drawable/rectangle_background">
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/profileLoaderView"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    app:indicatorColor="@color/colorWhite"
+                    app:indicatorName="BallPulseIndicator"
+                    app:maxHeight="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    app:maxWidth="@dimen/_35sdp" />
+
+                <TextView
+                    android:id="@+id/saveDetailsBtn"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rectangle_background"
+                    android:backgroundTint="@color/colorButtonDarkGrey"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/str_save_details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/default_loading" />
+</LinearLayout>

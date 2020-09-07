@@ -1,0 +1,434 @@
+<resources>
+    <string name="app_name">HPDT-Taxi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_phone_no">Phone No</string>
+    <string name="str_password">Password</string>
+    <string name="str_login_">Login</string>
+    <string name="str_login">Login</string>
+    <string name="str_past">PAST</string>
+    <string name="str_upcomming">UPCOMIMG</string>
+    <string name="str_request_cab">Book car</string>
+    <string name="str_not_avilable">Not available</string>
+    <string name="str_gome_only">Ready to launch</string>
+    <string name="str_your_trips">Your Tabs</string>
+    <string name="str_help">Help</string>
+    <string name="str_Payments">Payments</string>
+    <string name="str_settings">Settings</string>
+    <string name="str_simple_app">THIS IS A SAMPLE APP</string>
+    <string name="str_my_tabs">My Tabs</string>
+    <string name="strSchedule">Schedule</string>
+    <string name="str_ride_history">Ride History</string>
+    <string name="str_EarningHistory">Earning History</string>
+    <string name="str_about_app">About App</string>
+    <string name="str_support">Support</string>
+    <string name="sr_cancel">Cancel</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="str_offline">Offline</string>
+    <string name="str_be_a_tour_provider">Be a Tour Provider</string>
+    <string name="str_or">or</string>
+    <string name="str_signup">Signup</string>
+    <string name="str_login_enter_your_detail_to_login">Enter Your Details here to Login to Get a Tour App.</string>
+    <string name="str_email">Email</string>
+    <string name="str_login_now">Login now</string>
+    <string name="str_forgot_password">Forgot Password?</string>
+    <string name="str_continue_as">Continue as a?</string>
+    <string name="str_indvisual">Individual</string>
+    <string name="str_company">Company</string>
+    <string name="str_contact_info">Contact Information</string>
+    <string name="str_name">Name</string>
+    <string name="str_personal_info">Personal Information</string>
+    <string name="str_tell_us_about">Tell us about yourself</string>
+    <string name="str_education">Education</string>
+    <string name="str_experience">Experience (in years)</string>
+    <string name="str_traininig">Training</string>
+    <string name="str_register_on_plateform">Register on the platform as</string>
+    <string name="str_partner_with_get_a_tour">Partner With Get a Tour</string>
+    <string name="str_no_commission_high_earning">No Commission and High Earnings</string>
+    <string name="str_company_info">Company Information</string>
+    <string name="str_company_name">Company Name</string>
+    <string name="str_your_info">Your Information</string>
+    <string name="str_designation">Designation</string>
+    <string name="settings">setting</string>
+    <string name="permission_denied_explanation">Permission Denied</string>
+    <string name="str_verify_now">Verify Now</string>
+    <string name="enter_otp">Enter the 6-digit code send to you at</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="didnt_receive">Didn\'t Receive?</string>
+    <string name="reach_us">Reach us</string>
+    <string name="error_str_enter_otp">Enter OTP</string>
+    <string name="str_you_are_offline">You are offline!</string>
+    <string name="str_go_online_to_start">Go online to start accepting jobs</string>
+    <string name="str_scan">Scan</string>
+    <string name="str_qr_code_scane_required">QR Code Scan Required</string>
+    <string name="str_scan_your_qrcode_">Scan Your QR Code with your Vehicle QR Code to contiue.</string>
+    <string name="str_to_go_online_on_get">To be available, you need to scan your vehicle QR code first</string>
+    <string name="str_scan_qr_code">Scan QR Code</string>
+    <string name="str_scanned_successfully">Scanned Successfully</string>
+    <string name="str_proceed">PROCEED</string>
+    <string name="str_you_are_online">You are Online Now!</string>
+    <string name="str_go_your_jobs_will_be_aloted">Your jobs will be alloted to you Shortly</string>
+    <string name="str_online">Online</string>
+    <string name="str_contact_number">Contact Number</string>
+    <string name="str_driver_documents">Driver Documents</string>
+    <string name="str_driving_license">Driving License</string>
+    <string name="str_upload_required">Upload required</string>
+    <string name="str_police_verification_certificate">Police Verification Certificate</string>
+    <string name="str_vehicle_documents">Vehicle Documents</string>
+    <string name="str_vehicle_registration">Vehicle Registration</string>
+    <string name="str_vehicle_permit">Vehicle Permit</string>
+    <string name="str_upload_documents">Upload Documents</string>
+    <string name="str_continue">Continue</string>
+    <string name="str_select_any_one_tour_cat">Select any one tour  category</string>
+    <string name="str_air">Air</string>
+    <string name="str_tour_category">Tour Category</string>
+    <string name="str_land">Land</string>
+    <string name="str_water">Water</string>
+    <string name="str_walking">Walking</string>
+    <string name="str_select_tour_type">Select your tour category</string>
+    <string name="error_enter_password">Enter valid password</string>
+    <string name="error_email">Enter valid email address</string>
+    <string name="str_you_need_to_upload">You need to Upload</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_app_name">App Name</string>
+    <string name="str_app_version">Version</string>
+    <string name="str_Earning">Earnings</string>
+    <string name="str_total_Earning">Total Earnings</string>
+    <string name="str_week">Week</string>
+    <string name="str_today">Today</string>
+    <string name="str_trips">Trips</string>
+    <string name="str_ratings">Ratings</string>
+    <string name="str_reviews">Reviews</string>
+    <string name="str_overview">Overview</string>
+    <string name="str_profile">Profile</string>
+    <string name="str_education_detail">Education Details</string>
+    <string name="str_compliments">Compliments</string>
+    <string name="str_your_message">Your Message</string>
+    <string name="str_send">Send</string>
+    <string name="str_start_trip">Start trip</string>
+    <string name="str_chat_with_user">Chat with user</string>
+    <string name="str_trip_status">Trip Status</string>
+    <string name="str_complete_trip"> Complete Trip</string>
+    <string name="str_rejected_trips">Rejected Trips</string>
+    <string name="str_login_with_geta_tour">Login With Get a Tour</string>
+    <string name="str_copyrights">\@ 2019 copyrights</string>
+    <string name="str_your_total_earning">Your Total Earnings For this Week</string>
+    <string name="str_your_ride_this_week">Your Total Rides For this Week</string>
+
+
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+
+    <array name="material_calendar_day_abbreviations_array">
+        <item>@string/material_calendar_sunday</item>
+        <item>@string/material_calendar_monday</item>
+        <item>@string/material_calendar_tuesday</item>
+        <item>@string/material_calendar_wednesday</item>
+        <item>@string/material_calendar_thursday</item>
+        <item>@string/material_calendar_friday</item>
+        <item>@string/material_calendar_saturday</item>
+    </array>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+    <string name="str_login_please">Please login</string>
+    <string name="str_unavailable">Unavailable</string>
+    <string name="str_go_online_to_start_new">Go online to start working</string>
+    <string name="str_available">Available</string>
+    <string name="str_you_are_unavailble">You are unavailable</string>
+    <string name="str_you_are_available">You are available now</string>
+    <string name="str_received_successfully">Received successfully from</string>
+    <string name="str_rate_user">Rate User</string>
+    <string name="str_booking_details">Booking Details</string>
+    <string name="str_destination">Destination</string>
+    <string name="str_time_taken">Time Taken</string>
+    <string name="str_distance">Distance</string>
+    <string name="str_payment_mod">Payment Mode</string>
+    <string name="str_provide_your_value">Provide your feedback..</string>
+    <string name="str_pickup">Pick Up</string>
+    <string name="str_dropoff">Drop off</string>
+    <string name="str_datetime"><![CDATA[Date & Time]]></string>
+    <string name="str_you_have_30_sec">You Have 30 Seconds to Reject This ride. After timeout it will be Auto Accepted</string>
+    <string name="str_reject">Reject</string>
+    <string name="str_warning">Warning !!</string>
+    <string name="str_you_have_got_5_non_penalty">You have got 5 non-penalty trips, in the basic charges would be deducted</string>
+    <string name="str_accept">Accept</string>
+    <string name="str_start_moving">Start moving</string>
+    <string name="str_month">Month</string>
+    <string name="str_this_week">This Week</string>
+    <string name="str_enter_title">Enter title</string>
+    <string name="str_selected_tour">Selected Tour</string>
+    <string name="str_select_your_tour">Select your tour here...</string>
+    <string name="str_choose_time_and_date"><![CDATA[Choose Time & Date]]></string>
+    <string name="str_all_day">All day</string>
+    <string name="str_from">From</string>
+    <string name="str_to">To</string>
+    <string name="str_location">Location</string>
+    <string name="str_desription">Description</string>
+    <string name="str_save">Save</string>
+    <string name="str_successfully_logedin"> Login Successful</string>
+    <string name="str_speaks">Speaks</string>
+    <string name="str_and">and</string>
+    <string name="str_goOffline">Go offline</string>
+    <string name="str_vehicle_not_available">Not available</string>
+    <string name="str_upcoming_tours">Upcoming Tours</string>
+    <string name="str_see_all">See All</string>
+    <string name="str_arrived">Arrived</string>
+    <string name="str_mark_arrived_text">Mark this location arrived. Tour status will be updated and user gets notified</string>
+    <string name="str_status_update">Update Status</string>
+    <string name="str_pickup_">Pickup</string>
+    <string name="str_rider">Rider</string>
+    <string name="str_no_upcoming_rider">No upcoming ride available</string>
+    <string name="str_scan_qr">Scan Qr</string>
+    <string name="str_to_pickup_rider_txt">You need to scan rider qrcode to pickup</string>
+    <string name="str_picked_up">Picked Up</string>
+    <string name="str_picked_up_successfully">Picked up successfully</string>
+    <string name="str_select_option">Please select a relevant option</string>
+    <string name="str_you_gota_breakdown">You got a breakdown</string>
+    <string name="str_rider_not_show_up">The rider didn\'t show up.</string>
+    <string name="str_rider_behaviour_isnt_appro">The rider\'s behavior isn\'t appropriate.</string>
+    <string name="str_there_is_road_block">There is a roadblock.</string>
+    <string name="str_other">Other,( mention the problem)</string>
+    <string name="str_contact_support">Contact Support</string>
+    <string name="str_tour_riders_pickups">My All Pickups</string>
+    <string name="str_all_pickup">Tour\'s All Pickups</string>
+    <string name="seat">Seat</string>
+    <string name="seats">Seats</string>
+    <string name="str_enter_text_message">Enter your message</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_done">Done</string>
+    <string name="mark_destination_complete">Mark destination as complete</string>
+    <string name="do_uou_mark_destination_complete">Do you want to mark this destination as complete?</string>
+    <string name="str_thank_u">Thank you</string>
+    <string name="str_for_your_feedback">for your feedback</string>
+    <string name="str_go_back">Go back to home screen</string>
+    <string name="str_no_history_avaialble">No history available</string>
+    <string name="str_seat_booked">Seat booked</string>
+    <string name="str_seats_booked">Seats booked</string>
+    <string name="str_pickup_location">pickup location</string>
+
+
+
+
+
+    <!---->
+    <string name="enter_mobile">Enter Your Phone Number</string>
+    <string name="transition_arrow">transition_arrow</string>
+    <string name="transition_tvMoving">transition_tvMoving</string>
+    <string name="transition_ivFlag">transition_ivFlag</string>
+    <string name="transition_tvCode">transition_tvCode</string>
+    <string name="transition_tvPhoneNo">transition_tvPhoneNo</string>
+    <string name="transition_llPhone">transition_llPhone</string>
+    <string name="welcome_back">Welcome back</string>
+
+    <string name="enter_your_phone_number">Enter your mobile number</string>
+    <string name="get_started">Get started with</string>
+    <string name="login_via_fb">Continue with facebook</string>
+    <string name="or">Or</string>
+    <string name="str_your_grocery_store">Grocery Store</string>
+    <string name="str_deliver_to_your_home_txt">Express delivery of your groceries to your home</string>
+
+    <string name="error_enter_Valid_mobile_number">Please enter valid mobile number</string>
+    <string name="str_otp_sent_successfully">Please enter your OTP</string>
+    <string name="str_error_enter_otp">Please enter the received OTP, if not received yet, please click on Resend to receive a new OTP</string>
+    <string name="str_error_enter_full_name">Please provide your name</string>
+    <string name="str_error_email">Please provide a valid email</string>
+
+
+    <string name="str_full_name">Full Name</string>
+    <string name="str_phone_numbe">Phone Number</string>
+    <string name="str_agree_terms">I agree to the Privacy Policy and Terms and Conditions</string>
+    <string name="str_enter_otp">"Enter 4 digits OTP code sent to your mobile number "</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---->
+    <string name="scroll_target_time">Time…</string>
+    <string name="scroll_target_first_event_top">First Event Top</string>
+    <string name="scroll_target_first_event_bottom">First Event Bottom</string>
+    <string name="scroll_target_last_event_top">Last Event Top</string>
+    <string name="scroll_target_last_event_bottom">Last Event Bottom</string>
+    <string name="str_location_permission">Location permission Required</string>
+    <string name="str_location_permission_alert_message">Plesae allow us to access your location. Allow location permission</string>
+    <string name="str_forgot_password_with_question_mark">Forgot Password?</string>
+    <string name="str_enter_your_mobile_number">Enter you registered mobile number to receive new password </string>
+    <string name="str_mobile_number">Mobile Number</string>
+    <string name="str__mobile_number">Enter mobile number</string>
+    <string name="error_enter_mobile_number">Enter registered mobile number</string>
+    <string name="error_session_expired">Session Expired. Please login again.</string>
+    <string name="str_connected_to_internet">Connected to internet</string>
+    <string name="str_no_internet_conection">No internet connection</string>
+    <string name="start_time">Start Time</string>
+    <string name="str_vehicle_number">Vehicle Number</string>
+    <string name="end_time">End Time</string>
+
+
+
+    <!---->
+    <string name="picker_today">Today</string>
+
+    <string name="picker_am">AM</string>
+
+    <string name="picker_pm">PM</string>
+    <string name="str_select_start_time">Please select start time</string>
+    <string name="str_select_end_time">Please select end time</string>
+    <string name="str_invalid_time_duration">Time duration should  be at least 30 min.</string>
+    <string name="str_excellent_performance">Excellent Performance</string>
+    <string name="str_booking_added_successfully">Booking added successfully</string>
+    <string name="str_driver_app">Driver app</string>
+    <string name="str_enter_your_login_details">Enter your details to login</string>
+    <string name="str_enter_password">Enter Password</string>
+    <string name="str_welcome">Welcome</string>
+    <string name="strProfile">Profile</string>
+    <string name="str_home">Home</string>
+    <string name="str_go_online">Go Online</string>
+    <string name="str_ordered_at">Ordered at</string>
+    <string name="str_reached_pickup_point">Reached Pickup Point</string>
+    <string name="str_call_customer">Call Customer</string>
+    <string name="str_call_store">Call Store</string>
+    <string name="str_navigation">Navigation</string>
+    <string name="str_out_for_delivery">Out For Delivery</string>
+    <string name="str_order_delivered">Order Delivered</string>
+    <string name="str_reached_drop_off">Reached Drop-Off</string>
+    <string name="str_contact_freshbasket_">contact@freshbasket.com</string>
+    <string name="str_phone_number">Phone Number</string>
+    <string name="str_choose_concern">Choose Concern</string>
+    <string name="str_online_status_message">You will receive a alert for every order will be assigned to you. You can accept and reject that order</string>
+    <string name="str_you_are_online_">You are Online</string>
+    <string name="str_go_offlne_msg">"If you go offline No order will be assigned to you "</string>
+    <string name="str_save_details">Save Detail</string>
+
+    <string name="str_delivery_status">Delivery Status</string>
+    <string name="str_order_id">"Order ID: "</string>
+    <string name="strMessage_youcannot_go_offline">You cannot go offline without completing the order, please complete your order first.</string>
+    <string name="strMessage_youcannot_logout">You cannot logout without completing the order.</string>
+    <string name="str_driver_app_msg_txt">This is the app for Fresh Basket Delivery Person. If you are looking to order,</string>
+    <string name="change_settings">Change Settings</string>
+    <string name="str_ok">Ok</string>
+    <string name="strRejecting_job">Reject this job</string>
+    <string name="strRejecting_job_message">Are you sure to reject this job. If you reject this job you have to wait for next job</string>
+    <string name="select_concern">Choose your concern</string>
+    <string name="strErrorConcern">Please choose your concern</string>
+    <string name="str_hp_dt_taxi">Himachal Pradesh DT Taxi</string>
+    <string name="str_opt_sent">We have sent a new OTP to your number</string>
+
+    <string name="opt_verification">OTP Verification</string>
+    <string name="str_reset_password">Reset Password</string>
+    <string name="str_enter_your_detail_msg_signup">To complete the signup process please share the following details</string>
+    <string name="str_error_terms"><![CDATA[Please acknowledge the terms & conditions and privacy policy of the app to proceed]]></string>
+    <string name="str_book_with_us"><![CDATA[Book with us for favorite road trip & enjoy your trip in affordable prices]]></string>
+    <string name="str_hpdt_taxt_booking">HPDT Taxi Booking</string>
+    <string name="str_book_a_texi">Book a Taxi</string>
+    <string name="str_share_a_texi">Share a Taxi</string>
+    <string name="strNotifications">Notifications</string>
+    <string name="str_ride_history_and_schedule"><![CDATA[Trip History & Schedule]]></string>
+    <string name="str_where_to">Where to?</string>
+    <string name="str_want_travel_later">Want to travel later?</string>
+    <string name="str_schedule_ride_now">Schedule ride Now</string>
+    <string name="strPopularRouts">Popular Routes</string>
+    <string name="taxi_booking">Taxi Booking</string>
+    <string name="str_hatchback_sedan">Hatchback/Sedan</string>
+    <string name="str_choose_option_to_start_">Choose options to start your ride</string>
+    <string name="str_confirm_booking">Confirm Booking</string>
+    <string name="str_pay_by_cash">Pay by Cash</string>
+    <string name="change_">Change</string>
+    <string name="str_rupeee_symbol">₹ </string>
+    <string name="str_second_desc">Book or Schedule a taxi from the nearest taxi union with ease.</string>
+    <string name="str_third_desc">Book a seat on predefined taxi routes at an affordable price.</string>
+    <string name="str_third_heading">Join Shared Taxi</string>
+    <string name="str_second_heading">Book Taxi</string>
+    <string name="str_first_desc">Now book taxi and transfers in Himachal seamlessly.</string>
+    <string name="str_payment_options">Payment Options</string>
+    <string name="str_payment_methods">Payment method</string>
+    <string name="str_cash">Cash</string>
+    <string name="str_add_payment_method">Add payment method</string>
+    <string name="str_promo_codes">Promo Codes</string>
+    <string name="str_add_promo_codes">Add Promo code</string>
+    <string name="str_your_current_trip">Your current Trip</string>
+    <string name="str_Payment">Payment</string>
+    <string name="str_cancel_ride">Cancel Ride</string>
+    <string name="str_emergency_">Emergency</string>
+    <string name="str_end_ride">End Ride</string>
+    <string name="str_onride">On Ride</string>
+    <string name="str_no_address_found">No address found</string>
+    <string name="str_fire_break_up">Fare Breakup</string>
+    <string name="str_base_fair">Base Fare</string>
+    <string name="str_per_km">Per Kilometer</string>
+    <string name="str_conv_fee">Convenience Fee</string>
+    <string name="str_est_note">*estimated price are subject to  change based on actuals</string>
+    <string name="str_finding_your_ride">Finding Your Ride</string>
+    <string name="str_finding_your_ride_msg">"Finding nearby ride for you. It may take some time for finding ride for you "</string>
+    <string name="str_thank_you_for_riding">Thankyou for Riding With HPDT</string>
+    <string name="str_thank_you_msg">We  hope you enjoyed your ride with us. We will always happy to be there for you</string>
+    <string name="str_trip_details">Trip Details</string>
+    <string name="str_please_rate_your_exp_">Please rate your experience  with driver</string>
+    <string name="str_Review_your_trip">Review Your Trip</string>
+    <string name="str_schedule_ride">Schedule a Ride</string>
+    <string name="str_select_date_time">Please select your date and time before scheduling</string>
+    <string name="str_confirm">CONFIRM</string>
+    <string name="str_date">Date</string>
+    <string name="str_time">Time</string>
+    <string name="strScheduleNow">Schedule Now</string>
+    <string name="strSchedulingRide">Scheduling Ride</string>
+    <string name="strTotlSeats">Total Seats</string>
+    <string name="str_disclamir">Disclaimer</string>
+    <string name="str_space_in_taxi">Space in  the taxi might be limited and only 1 bag per passenger is allowded</string>
+    <string name="strLoremIpsm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="strfaq">FAQ</string>
+    <string name="strTermsConditions">Terms and Conditions</string>
+    <string name="strRefundPolicy">Refund Policy</string>
+    <string name="strPrivacyPolicy">Privacy policy</string>
+    <string name="str_no_notifications_yet">No Notification Yet</string>
+    <string name="str_help_with_ride">Help with ride</string>
+    <string name="str_your_notification_sent_to_custumer_executive">Your notification has been sent to our  customer services, if you still required any other you can</string>
+    <string name="str_close">Close</string>
+    <string name="str_call_safety_helpline_no">Call Safety Helpline number</string>
+    <string name="str_change_name">Change</string>
+    <string name="strpast_ride">Past Rides</string>
+    <string name="str_no_location_found">No location found</string>
+    <string name="str_location_error">Error</string>
+    <string name="str_select_cab">Please choose a Taxi</string>
+
+
+</resources>

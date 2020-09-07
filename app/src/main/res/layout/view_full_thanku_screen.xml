@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:attrs="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/closeBtnImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/_15sdp"
+            android:rotation="180"
+            android:src="@mipmap/ic_next"
+            android:tint="@color/colorBlack" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_slider3" />
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/str_thank_u"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_22sdp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/str_for_your_feedback"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/backLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@mipmap/ic_back_home" />
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/str_go_back" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

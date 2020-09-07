@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/compliment_Image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/colorGrey"
+        android:padding="@dimen/_2sdp"
+        app:placeholderImage="@mipmap/ic_funny"
+        app:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/complimentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/compliment_Image"
+        android:background="@drawable/drawable_circle_app_color"
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingRight="@dimen/_6sdp"
+        android:text="1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/complimentTxt"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compliment_Image"
+        android:layout_alignRight="@+id/compliment_Image"
+        android:maxLines="2"
+        style="@style/CommonTextStyle"
+        android:text="@string/str_excellent_performance"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorWhite"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:orientation="vertical">
+
+    <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_to_go_online_on_get" />
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/mScannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+
+</LinearLayout>

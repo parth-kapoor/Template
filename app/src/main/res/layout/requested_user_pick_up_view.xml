@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+    <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/str_pickup"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/_10sdp" />
+
+    <TextView
+            android:id="@+id/pickUpLocationNewDialog"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Lisbon Castle" />
+
+</LinearLayout>

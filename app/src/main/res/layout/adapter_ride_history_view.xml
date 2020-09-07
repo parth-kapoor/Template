@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/strpast_ride"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 May, 2020"
+        android:textColor="@color/colorTextGrey1"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/colorDividerGrey" />
+
+    <include layout="@layout/adapter_ride_view" />
+
+</LinearLayout>

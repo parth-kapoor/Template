@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_pickup_"
+            android:textColor="@color/colorTextGrey1"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/pickupLocationText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="The Real Bakery"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/callCustomerBtn"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_callcustomer"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_call_customer"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/callStoreBtn"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_call_store"
+            android:drawablePadding="@dimen/_5sdp"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_call_store"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/navigationBtn"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_navigation"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_navigation"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/statusUpdateButton"
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/rectangle_background"
+        android:text="@string/str_reached_pickup_point"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

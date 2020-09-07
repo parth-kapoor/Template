@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="code_setup.ui_.home.views.HomeActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="code_setup.ui_.post_auth.activity_.MapsActivity" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/homeLoaderView"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:indicatorColor="@color/colorPrimary"
+                app:indicatorName="BallPulseIndicator"
+                app:maxHeight="@dimen/_30sdp"
+                app:maxWidth="@dimen/_30sdp" />
+
+            <include
+                android:id="@+id/startbookingBottomView"
+                layout="@layout/layout_botttom_status_view" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+    <FrameLayout
+        android:id="@+id/bottomSheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/_5sdp" />
+
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:transitionName="my_shared_transactiion">
+
+    <include layout="@layout/default_toolbar_lay" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loaderViewChat"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="visible"
+            app:indicatorColor="@color/colorPrimary"
+            app:indicatorName="BallPulseIndicator" />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/chatRecyclar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:itemCount="3"
+            tools:listitem="@layout/adapter_chat_conversation_view">
+
+
+    </com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+
+    <include layout="@layout/line_1" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/chatMessageField"
+                style="@style/CommonEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@color/cardview_light_background"
+                android:hint="@string/str_enter_text_message"
+                android:maxLines="3"
+                android:padding="@dimen/_10sdp" />
+
+        <ImageView
+                android:id="@+id/sendMessageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/touch_bg"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/ic_next" />
+
+    </LinearLayout>
+
+</LinearLayout>

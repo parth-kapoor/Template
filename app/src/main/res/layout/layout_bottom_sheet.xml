@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorWhite">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                    <ImageButton
+                            android:id="@+id/cancelBtn"
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@mipmap/ic_back"
+                            android:tint="@android:color/black" />
+
+                    <TextView
+                            android:id="@+id/nameToolbar"
+                            style="@style/CommonTextStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:text="@string/str_upcoming_tours"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@android:color/black" />
+
+                    <ImageButton
+                            android:id="@+id/editBtn"
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:tint="@android:color/white" />
+
+                    <ImageButton
+                            android:id="@+id/moreBtn"
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:tint="@android:color/white" />
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                    android:id="@+id/bottomSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+
+                    <LinearLayout
+                            android:id="@+id/seeallHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                style="@style/CommonTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/str_upcoming_tours"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:id="@+id/seeAllAppBtn"
+                                style="@style/CommonTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/str_see_all"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                            android:id="@+id/upcominiToursFeagmentRecyclar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minWidth="@dimen/_300sdp"
+                            android:minHeight="@dimen/_200sdp"
+                            app:shimmer_demo_angle="20"
+                            app:shimmer_demo_child_count="4"
+                            app:shimmer_demo_grid_child_count="4"
+                            app:shimmer_demo_layout="@layout/shimmer_layout_adapter_upcoming_tours_view"
+                            app:shimmer_demo_layout_manager_type="linear_vertical"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/adapter_upcoming_tours_view" />
+
+                    <TextView
+                            android:id="@+id/noRideText"
+                            style="@style/CommonTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center_horizontal"
+                            android:minHeight="@dimen/_150sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/str_no_upcoming_rider"
+                            android:visibility="gone" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/noRidegif"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car_move1"
+                            android:visibility="gone" />
+
+                    <View
+                            android:id="@+id/extraSpace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
+
+

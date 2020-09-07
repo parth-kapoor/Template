@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_lay" />
+
+    <!--  <include layout="@layout/month_navigation_lay" />
+
+      <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/datesRecyclar"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:importantForAutofill="auto"
+              android:paddingLeft="@dimen/_10sdp"
+              android:paddingRight="@dimen/_10sdp"
+              app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+              app:spanCount="7"
+              tools:itemCount="35"
+              tools:listitem="@layout/adapter_date_view_layout" />-->
+    <code_setup.app_util.calender_util.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:eventsEnabled="true"
+            app:forwardButtonSrc="@mipmap/ic_cal_frwrd"
+            app:headerColor="@color/colorWhite"
+            app:headerLabelColor="#000000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:previousButtonSrc="@mipmap/ic_cal_back"
+            app:selectionColor="@color/colorPrimary"
+            app:todayLabelColor="#cc0000"
+            app:type="one_day_picker" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loaderView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            app:indicatorColor="@color/colorPrimary"
+            app:indicatorName="BallPulseIndicator"
+            app:maxHeight="@dimen/_20sdp"
+            app:maxWidth="@dimen/_20sdp" />
+</LinearLayout>

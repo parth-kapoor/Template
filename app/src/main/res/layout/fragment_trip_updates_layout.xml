@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/floatBtnHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/currentLocationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_gps"
+            />
+
+        <ImageView
+            android:id="@+id/sosBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_sos"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/statusUpdateVeewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/floatBtnHolder"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_top_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topArrowTripView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/lineViewSlide"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_4sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/rectangle_background"
+                    android:backgroundTint="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/driverStatusTopTextView"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:drawableTop="@mipmap/ic_down"
+                    android:drawableTint="@color/colorWhite"
+                    android:padding="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:text="Meet Taxi Driver at the pickup point"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rideStatusText"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Your Ride is arriving in 3 min "
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorDividerGrey" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/driver_data_view_holder"
+            layout="@layout/layout_driver_status_data_view"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/ride_detail_view_holder"
+            layout="@layout/layout_ride_detail_view"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

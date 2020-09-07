@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="code_setup.ui_.home.views.HomeActivity">
+
+    <include
+        layout="@layout/trans_toolbar_lay"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/homeTopBar"
+        layout="@layout/home_top_custom_view" />
+
+    <include
+        layout="@layout/home_status_notify_view"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_root"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include layout="@layout/content_main" />
+
+        <include layout="@layout/default_loading" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/trip_loading_view"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/mainBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/_5sdp"
+        android:visibility="gone" />
+
+</RelativeLayout>

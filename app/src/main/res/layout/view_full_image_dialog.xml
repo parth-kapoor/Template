@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:attrs="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/closeImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/ic_close"
+            android:tint="@color/colorWhite" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fullImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_centerInParent="true"
+            android:minWidth="@dimen/_200sdp"
+            android:minHeight="@dimen/_100sdp" />
+
+    <RelativeLayout
+            android:id="@+id/pagerHolderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fullImageViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:minWidth="@dimen/_200sdp"
+                android:minHeight="@dimen/_100sdp"
+                android:visibility="visible" />
+
+        <com.rd.PageIndicatorView
+                android:id="@+id/pageIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:piv_animationType="scale"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_selectedColor="@color/colorGrey"
+                app:piv_unselectedColor="@color/colorPrimary"
+                app:piv_viewPager="@id/fullImageViewPager"
+                attrs:piv_padding="12dp"
+                attrs:piv_radius="8dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

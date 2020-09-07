@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/menuNotificationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_notifications"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/strNotifications"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/menuProfileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_profile"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/strProfile"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/menuyourRideHistoryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_triphistory"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_ride_history_and_schedule"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/menuyourHelpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_help"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_help"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/menuSuptBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_support"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_support"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <TextView
+            android:id="@+id/menuAbutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_about_us"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_about_app"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/menuLogoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:drawableLeft="@mipmap/ic_logout"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_logout"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="App Version 1.0.0"
+        android:textSize="@dimen/_10sdp" />
+
+
+</LinearLayout>

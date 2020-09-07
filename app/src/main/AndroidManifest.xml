@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.electrovese.setup">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:name="code_setup.app_core.BaseApplication"
+        tools:replace="android:allowBackup"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name="code_setup.ui_.auth.views.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="code_setup.ui_.home.views.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.home.views.ride.SelectRouteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="code_setup.ui_.auth.views.authantication_.LoginActNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="code_setup.ui_.auth.views.authantication_.LoginWithPhone"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.auth.views.authantication_.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.auth.views.authantication_.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+
+
+        <activity
+            android:name="code_setup.ui_.auth.views.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="code_setup.ui_.auth.views.SignupCompanyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+
+
+        <activity
+            android:name="code_setup.ui_.home.views.HelpAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.settings.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.settings.views.support.SupportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+
+        <activity
+            android:name="code_setup.ui_.settings.views.ridehistory.RideHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.settings.views.ridehistory.RejectedRidesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme" />
+        <activity
+            android:name="code_setup.ui_.home.views.rate.RateTripActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="code_setup.ui_.settings.views.payments.SelectPaymentTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="code_setup.ui_.home.views.ride.RideSchedulingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="code_setup.ui_.settings.views.TermsConditionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="code_setup.ui_.settings.NotificationScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <!--INTERNET DETECTOR-->
+
+        <receiver android:name="code_setup.app_util.broadcasr_receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <!---->
+
+
+        <!--  SOCKET CONNECTION -->
+        <service android:name="code_setup.app_util.socket_work.SocketService" />
+        <!---->
+
+        <!--  FCM SERVICE-->
+
+        <service
+            android:name="code_setup.net_.fcm_.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!---->
+
+
+        <!-- BACKGROUND LOCATION TRACKING -->
+        <service
+            android:name="code_setup.app_util.location_utils.LocationTrackerService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name="code_setup.app_util.location_utils.tracking.service.LocationTrackerUpdateIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="code_setup.app_util.location_utils.tracking.service.LocationTrackerUpdateBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.electrovese.grocerydriver.geolocator.tracking.service.ACTION_PROCESS_UPDATES" />
+            </intent-filter>
+        </receiver>
+
+        <!---->
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@mipmap/ic_profile_image"
+            app:placeholderImage="@mipmap/ic_profile_image"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/colorPrimary"
+            app:roundingBorderWidth="@dimen/_1sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="Driver Name"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/pickupLocationText"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="Hyundai i20"
+                android:textColor="@color/colorTextGrey1"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_callcustomer"
+            android:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/rectangle_background"
+        android:backgroundTint="@color/colorButtonGrey"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="HP 01 A 0000"
+        android:textSize="@dimen/_12sdp" />
+
+
+</LinearLayout>

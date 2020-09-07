@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.BirjuVachhani:locus-android:3.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29a42f67d9a98f509cef72e66de572dc/locus-android-3.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29a42f67d9a98f509cef72e66de572dc/locus-android-3.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29a42f67d9a98f509cef72e66de572dc/locus-android-3.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.BirjuVachhani/locus-android/3.0.1/e032d23b52e70ab827fb9b4df7b35c636799a329/locus-android-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

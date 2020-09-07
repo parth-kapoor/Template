@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/myLocationIconImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_your_location" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/drawable_dash_line" />
+
+        <ImageView
+            android:id="@+id/destinationIconImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_whereto" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/myLocationView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/rectangle_background"
+            android:backgroundTint="@color/searchFieldbacckground"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:defaultQueryHint="Your Location"
+            app:iconifiedByDefault="false"
+            app:queryHint="Your Location"
+            app:searchIcon="@null"
+            app:showDividers="none"
+            app:theme="@style/AppSearchView" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/destinationLocationView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/rectangle_bg_with_grey_border"
+            android:backgroundTint="@color/searchFieldbacckground"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:transitionName="my_transactiion"
+            app:defaultQueryHint="@string/str_where_to"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/str_where_to"
+            app:searchIcon="@null"
+            app:showDividers="none"
+            app:theme="@style/AppSearchView" />
+    </LinearLayout>
+
+</LinearLayout>

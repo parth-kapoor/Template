@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_lay" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rideHistoryAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/noHistoryTxt"
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_50sdp"
+        android:text="@string/str_no_history_avaialble"
+        android:textColor="@color/colorTextGrey1"
+        android:visibility="gone" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loaderViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator" />
+</LinearLayout>

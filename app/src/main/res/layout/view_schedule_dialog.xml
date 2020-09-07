@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/rectangle_bg_with_border"
+        android:backgroundTint="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_25sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/dialogMessagTitls"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="@string/str_schedule_ride"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialogMessageText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:maxLines="8"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/str_select_date_time"
+            android:textSize="@dimen/_11sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:textColor="@color/colorTextGrey1"
+                    android:text="@string/str_date" />
+
+                <TextView
+                    android:id="@+id/dateFieldTxt"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_bg_with_grey_border"
+                    android:drawableRight="@drawable/ccp_down_arrow"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/_5sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:textColor="@color/colorTextGrey1"
+                    android:text="@string/str_time" />
+
+                <TextView
+                    android:id="@+id/timeFieldTxt"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_bg_with_grey_border"
+                    android:drawableRight="@drawable/ccp_down_arrow"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/_5sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialogCancelBtn"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/rectangle_background"
+                android:backgroundTint="@color/colorWhite"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/str_cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextGrey1"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/dialogConfirmBtn"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/rectangle_background"
+                android:backgroundTint="@color/colorWhite"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/str_confirm"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_schedule" />
+
+
+</RelativeLayout>

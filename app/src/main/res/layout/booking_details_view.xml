@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_destination"
+                android:textColor="@color/colorTextGrey1" />
+
+        <TextView
+                android:id="@+id/tourDestinationTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:padding="@dimen/_5sdp"
+                android:text="Algarve, Sintra" />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_time_taken"
+                android:textColor="@color/colorTextGrey1" />
+
+        <TextView
+                android:id="@+id/tourTimeTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:padding="@dimen/_5sdp"
+                android:text="1 Hr, 45 minutes" />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_distance"
+                android:textColor="@color/colorTextGrey1" />
+
+        <TextView
+                android:id="@+id/tourDistanceTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:padding="@dimen/_5sdp"
+                android:text=" 90 km " />
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_payment_mod"
+                android:textColor="@color/colorTextGrey1" />
+
+        <TextView
+                android:id="@+id/tourPayTypeTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:padding="@dimen/_5sdp"
+                android:text=" Credit card" />
+
+    </LinearLayout>
+</LinearLayout>

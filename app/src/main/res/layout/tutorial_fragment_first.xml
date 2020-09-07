@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/pageImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sampl_login_banner" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pageHeading"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/str_hpdt_taxt_booking"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="visible"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pageDesc"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="1dp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/str_book_with_us"
+            android:textColor="@color/colordarkGrey"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+</LinearLayout>

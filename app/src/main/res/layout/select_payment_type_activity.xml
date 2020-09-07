@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_lay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:transitionName="my_transactiion">
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_payment_methods"
+            android:textColor="@color/colorTextGrey1"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@mipmap/ic_visa"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_10sdp"
+            android:background="?selectableItemBackground"
+            android:text="  . . . .  2222" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:drawableLeft="@mipmap/ic_cash"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:background="?selectableItemBackground"
+            android:text="@string/str_cash" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/str_add_payment_method"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/colorDividerGrey" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_promo_codes"
+            android:textColor="@color/colorTextGrey1"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/str_add_promo_codes"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>

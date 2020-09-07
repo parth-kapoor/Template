@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_driver_documents"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_driving_license"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_upload_required"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/drivingLicenseArrowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/ic_arrow_right_black" />
+
+    </LinearLayout>
+
+    <!---->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_police_verification_certificate"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_upload_required"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/policeVerifArrowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/ic_arrow_right_black" />
+
+    </LinearLayout>
+
+    <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_vehicle_documents"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+    <include layout="@layout/line" />
+
+    <!---->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_vehicle_registration"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_upload_required"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/vehicleRegiArrowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/ic_arrow_right_black" />
+
+    </LinearLayout>
+
+    <!---->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_vehicle_permit"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_upload_required"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/vehiclePermitArrowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/ic_arrow_right_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

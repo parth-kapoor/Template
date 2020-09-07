@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_bg_with_border"
+            android:backgroundTint="@color/colorWhite"
+            >
+        <TextView
+                android:id="@+id/dialogMessageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="message"
+                android:padding="@dimen/_15sdp"
+                android:textColor="@color/colorBlack"
+                android:maxLines="8"
+                android:textSize="@dimen/_14sdp"
+
+                />
+        <TextView android:id="@+id/dialogBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_background"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="right"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/sr_cancel"/>
+    </LinearLayout>
+
+</LinearLayout>

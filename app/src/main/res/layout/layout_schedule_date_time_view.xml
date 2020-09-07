@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scheduledDateTxtHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scheduledDateTimeTxt"
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="16 May, 2020 at 4:16 PM"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/colorDividerGrey" />
+
+</LinearLayout>

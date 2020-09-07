@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/rectangle_bg_with_border"
+        android:backgroundTint="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_25sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/dialogMessagTitls"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="@string/str_help_with_ride"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialogMessageText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:maxLines="8"
+            android:text="@string/str_your_notification_sent_to_custumer_executive"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/callSafetyHelplineNo"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_callcustomer"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/str_call_safety_helpline_no" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialogCloseBtn"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/rectangle_background"
+                android:backgroundTint="@color/colorWhite"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/str_close"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_sos_notification" />
+
+
+</RelativeLayout>

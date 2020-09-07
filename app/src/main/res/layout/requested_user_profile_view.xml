@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/userImageNewDialog"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:placeholderImage="@mipmap/ic_profile_pic"
+            app:placeholderImageScaleType="centerCrop"
+            app:roundingBorderColor="@color/colorPrimary"
+            app:roundingBorderWidth="@dimen/_2sdp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+        <TextView
+                android:id="@+id/userNameNewDialog"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                tools:text="Lohana Cindy" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+            <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@mipmap/ic_star_selected" />
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="4.9"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tourPriceNewDialog"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:drawablePadding="@dimen/_5sdp"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_18sdp"
+            tools:text="‎€40" />
+</LinearLayout>

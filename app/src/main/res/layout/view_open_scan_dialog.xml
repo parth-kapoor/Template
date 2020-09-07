@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_background"
+        android:backgroundTint="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="8"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/str_goOffline"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/dialogMessageText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="8"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_go_offlne_msg"
+            android:textColor="@color/colorTextGrey1"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/dialogOpenBtn"
+            style="@style/CommonTextStyle"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rectangle_background"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/str_offline"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:minHeight="@dimen/_400sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@mipmap/ic_slider2" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Lorem Ipsum is simply dummy text of
+                 the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            android:textColor="@color/colorTextGrey1"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@mipmap/ic_call"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="+91 098765431"
+            android:textColor="@color/daysLabelColor"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@mipmap/ic_email"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/str_contact_freshbasket_"
+            android:textColor="@color/daysLabelColor"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_std_book"
+            android:paddingLeft="@dimen/_15sdp"
+
+            android:text="@string/str_app_version"
+            android:textColor="@color/daysLabelColor"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_std_book"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text=": 1.0.0"
+            android:textColor="@color/daysLabelColor"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

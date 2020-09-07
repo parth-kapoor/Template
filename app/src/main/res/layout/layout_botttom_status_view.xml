@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/rounded_top_background"
+    android:elevation="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:translationY="1000dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="?selectableItemBackground"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/wishMessageText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:text="Good Afternoon User"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whereToTxtViewHome"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/rectangle_bg_with_grey_border"
+            android:backgroundTint="@color/searchFieldbacckground"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_where_to"
+            android:textColor="@color/colorBlack"
+            android:transitionName="my_transactiion"
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/str_want_travel_later" />
+
+        <TextView
+            android:id="@+id/scheduleRideTxtBtn"
+            android:background="?selectableItemBackground"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:text="@string/str_schedule_ride_now"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

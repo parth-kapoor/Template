@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="@string/str_datetime"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="@dimen/_10sdp" />
+
+        <TextView
+                android:id="@+id/tourDateTimeNewDialog"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorBlack"
+                tools:text="Tue, 5 Nov,2019 12:00 PM" />
+
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/call_user_fBtn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/drawable_circle"
+            android:elevation="@dimen/_5sdp"
+            android:src="@mipmap/ic_contact"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorWhite" />
+
+
+</LinearLayout>

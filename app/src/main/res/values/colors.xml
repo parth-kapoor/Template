@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6D00</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#404040</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTrans">#66FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="colorGrey">#E4E2E2</color>
+    <color name="colorTextGrey">#9E9E9E</color>
+    <color name="colorTextGrey1">#7F7F7F</color>
+    <color name="colorGreen">#096735</color>
+    <color name="colorLine">#FAFAFA</color>
+    <color name="colorRed">#CB2525</color>
+    <color name="colorPrimarytrans">#442196F3</color>
+    <!--Button color-->
+    <color name="ripple_effect">#7b7f91</color>
+    <color name="light_gray">#e0e0e0</color>
+    <color name="colorButtonGrey">#F2F2F2</color>
+    <color name="colorCabSelectionBg">#ECF2FF</color>
+
+
+
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+
+    <color name="itemHighlightColor">#1F000000</color>
+    <color name="itemFocusedColor">#1A000000</color>
+    <color name="defaultColor">#2196F3</color>
+    <color name="colorTextGreen">#56824D</color>
+    <color name="colorBackgroundGrey">#F4F4F4</color>
+    <color name="colorShadeGrey">#44F4F4F4</color>
+    <color name="textColorSidemenuHeader">#88FFFFFF</color>
+    <color name="textcolorGreenLight">#519270</color>
+
+    <color name="picker_default_selector_color">#646464</color>
+    <color name="colorSideDrwaerDarkHeader">#404040</color>
+    <color name="colordarkGrey">#525252</color>
+    <color name="colorFbblue">#1878F3</color>
+    <color name="colorTabUnselectedIcon">#66000000</color>
+    <color name="colorTextLabel">#262626</color>
+    <color name="colorToolbarText">#484747</color>
+    <color name="colorWhiteLight">#44FFFFFF</color>
+    <color name="colorDividerGrey">#F3F3F3</color>
+    <color name="colorOrderStatusBg">#1D1B1C</color>
+    <color name="colorListLoader">#EFEFEF</color>
+    <color name="colorButtonDarkGrey">#404040</color>
+    <color name="searchFieldbacckground">#F5F5F5</color>
+
+
+</resources>

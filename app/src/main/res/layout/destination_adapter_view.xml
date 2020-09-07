@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+    <CheckBox
+            android:id="@+id/checkBoxDestination"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:padding="@dimen/_5sdp"
+            android:text=" Maldives"
+            android:textSize="@dimen/_12sdp" />
+
+    <TextView
+            android:id="@+id/txtPickUpTxt"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/touch_bg"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/_10sdp"
+            tools:text="Pickup 2 riders" />
+
+</LinearLayout>

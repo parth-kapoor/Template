@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/introPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pagerIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:piv_selectedColor="@color/colordarkGrey"
+            app:piv_unselectedColor="@color/light_gray"
+            app:piv_radius="@dimen/_4sdp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

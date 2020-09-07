@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topViewdrawerHeaderProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@color/colorSideDrwaerDarkHeader"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/userImageView"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/nav_header_desc"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        app:placeholderImage="@mipmap/ic_profile_image"
+        app:placeholderImageScaleType="fitCenter"
+        app:roundAsCircle="true"
+        app:roundingBorderColor="@color/colorPrimary"
+        app:roundingBorderWidth="@dimen/_1sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <TextView
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_std_book"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/str_welcome"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/accountName"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_std_book"
+            android:padding="@dimen/_5sdp"
+            android:text="+91 123456789"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+</LinearLayout>

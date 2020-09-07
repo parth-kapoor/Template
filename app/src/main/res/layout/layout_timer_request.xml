@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+            android:id="@+id/spannableMessageText"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/str_you_have_30_sec"
+            android:textSize="@dimen/_12sdp" />
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:src="@mipmap/ic_timer" />
+
+        <TextView
+                android:id="@+id/countDownTimerTxtDialog"
+                style="@style/CommonTextStyle"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/drawable_circle"
+                android:gravity="center"
+                android:text="00"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/rejectBtn"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_bg_with_border"
+                android:gravity="center"
+                android:text="@string/str_reject"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+        <Button
+                android:id="@+id/acceptBtn"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_background"
+                android:gravity="center"
+                android:text="@string/str_accept"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+
+</LinearLayout>

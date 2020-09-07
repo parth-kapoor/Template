@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivbackSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="@dimen/_10sdp"
+            android:tint="@color/colorBlack"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_back_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/ivbackSignup">
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="@string/str_signup"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="@string/str_enter_your_detail_msg_signup"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="@dimen/_13sdp" />
+
+            <include layout="@layout/signup_field_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/signUpCheckBoxterms"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_gravity="top"
+                    android:padding="@dimen/_3sdp"
+                    />
+                <TextView
+                    android:id="@+id/signUpCheckBoxtermsTxt"
+                    android:layout_width="match_parent"
+                    android:text="@string/str_agree_terms"
+                    android:textSize="@dimen/_12sdp"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:lineSpacingMultiplier="1"
+                    style="@style/CommonTextStyle"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:background="@drawable/rectangle_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/signupLoaderView"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    app:indicatorColor="@color/colorWhite"
+                    app:indicatorName="BallPulseIndicator"
+                    app:maxHeight="@dimen/_35sdp"
+                    app:maxWidth="@dimen/_35sdp" />
+
+                <Button
+                    android:id="@+id/signupBtnText"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/rectangle_background"
+                    android:backgroundTint="@color/colorButtonDarkGrey"
+                    android:gravity="center"
+                    android:text="@string/str_signup"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+
+    <!--<domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">"http://192.168.1.21:7575"</domain>
+    </domain-config>-->
+</network-security-config>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/holderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/default_toolbar_lay" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+        <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_select_option"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp" />
+
+        <CheckBox
+                android:id="@+id/checkBox_1"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/str_you_gota_breakdown"
+                android:textSize="@dimen/_12sdp" />
+
+        <CheckBox
+                android:id="@+id/checkBox_2"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/str_rider_not_show_up"
+                android:textSize="@dimen/_12sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/riderRecyclarSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:visibility="gone"
+                tools:itemCount="4"
+                android:layout_marginBottom="@dimen/_2sdp"
+                tools:listitem="@layout/adapter_tour_members_support_view" />
+
+        <CheckBox
+                android:id="@+id/checkBox_3"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/str_rider_behaviour_isnt_appro"
+                android:textSize="@dimen/_12sdp" />
+
+        <CheckBox
+                android:id="@+id/checkBox_4"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/str_there_is_road_block"
+                android:textSize="@dimen/_12sdp" />
+
+        <CheckBox
+                android:id="@+id/checkBox_5"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="@string/str_other"
+                android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/saveBtnSupport"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rectangle_background"
+            android:text="@string/str_save"
+            android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>

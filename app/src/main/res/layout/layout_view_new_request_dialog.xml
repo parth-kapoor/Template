@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp">
+
+        <include layout="@layout/requested_user_profile_view" />
+
+        <!---->
+
+        <include layout="@layout/requested_user_pick_up_view" />
+
+        <include layout="@layout/line_1" />
+        <!---->
+
+
+        <!---->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_dropoff"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextGrey"
+                    android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                    android:id="@+id/dropLocationNewDialog"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorBlack"
+                    tools:text="Saint Geroge Castle" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_1" />
+
+        <!---->
+
+        <!---->
+
+        <include layout="@layout/requested_user_date_time_view" />
+
+        <include layout="@layout/line_1" />
+
+        <!---->
+
+        <!---->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/str_destination"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextGrey"
+                    android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                    android:id="@+id/tourDestinationsNewDialog"
+                    style="@style/CommonTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Libnon, Porto, Saint"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_1" />
+
+        <include layout="@layout/layout_timer_request" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundGrey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/str_warning"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                    style="@style/CommonTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/str_you_have_got_5_non_penalty"
+                    android:textColor="@color/colorTextGrey"
+                    android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

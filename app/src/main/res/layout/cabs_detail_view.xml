@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCabSelectionBg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_hatchback" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/detailCabType"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Hatchback/Sedan"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carSeatsTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha=".8"
+                android:drawableLeft="@mipmap/ic_people_summary"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="04 Seats"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/carDistacneTimeTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha=".8"
+                android:drawableLeft="@mipmap/ic_time_summary"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="10 min away"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/totalsDistacneTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha=".8"
+                android:drawableLeft="@mipmap/ic_distance_summary"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="100 KMs"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/detailTotalPrice"
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹ 250"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Per ride"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/str_fire_break_up"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_10sdp">
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha=".8"
+                android:text="@string/str_base_fair"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/baseFairTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹100 "
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_10sdp">
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha=".8"
+                android:text="@string/str_per_km"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/perKmFairTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹100 "
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_10sdp">
+
+            <TextView
+                style="@style/CommonTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha=".8"
+                android:text="@string/str_conv_fee"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/convninceFeeTxt"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹60 "
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".7"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/str_est_note"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>
